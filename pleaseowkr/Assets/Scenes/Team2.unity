@@ -5968,7 +5968,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.4
   m_Range: 100
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -6027,7 +6027,7 @@ Transform:
   m_GameObject: {fileID: 1992033837}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6176993, y: 0.27292222, z: 0.3256386, w: 0.6617557}
-  m_LocalPosition: {x: 0.1, y: 10.12, z: 22.78}
+  m_LocalPosition: {x: 2.76, y: 9.8, z: 21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8796,7 +8796,7 @@ MonoBehaviour:
   zoomFOV: 30
   zoomStepTime: 5
   playerCanMove: 1
-  walkSpeed: 3.37
+  walkSpeed: 2.2
   maxVelocityChange: 10
   enableSprint: 1
   unlimitedSprint: 0
