@@ -204,9 +204,8 @@ public class FirstPersonController : MonoBehaviour
     private void Update()
     {
         #region Camera
-
         // Control camera movement
-        if(cameraCanMove && Time.timeScale == 1)
+        if (cameraCanMove && Time.timeScale == 1)
         {
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 
