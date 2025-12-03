@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PLEASEDONTBREAK.unity
+    guid: 4aca68f3d6d030f449372d56e6a8b291
   m_configObjects: {}
