@@ -78,7 +78,7 @@ public class CollectObject : MonoBehaviour
         }
         Debug.Log(timer);
 
-        if(journalOpen && Input.GetKeyDown(KeyCode.Escape) /*|| Input.GetKeyUp(KeyCode.Space)*/)
+        if(journalOpen && Input.GetKeyDown(KeyCode.Escape))
         {
             journalMenu.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
@@ -127,11 +127,11 @@ public class CollectObject : MonoBehaviour
         {
             LightsOnEvent();
         }
-        if (activeIndex == 7)
+        if (activeIndex == 9)
         {
             JournalEvent();
         }
-        if (activeIndex == 8)
+        if (activeIndex == 10)
         {
             HeartbeatEvent();
             canCountTimer = true;
