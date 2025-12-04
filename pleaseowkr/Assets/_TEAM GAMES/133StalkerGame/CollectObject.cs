@@ -127,11 +127,11 @@ public class CollectObject : MonoBehaviour
         {
             LightsOnEvent();
         }
-        if (activeIndex == 9)
+        if (activeIndex == 7)
         {
             JournalEvent();
         }
-        if (activeIndex == 10)
+        if (activeIndex == 8)
         {
             HeartbeatEvent();
             canCountTimer = true;
