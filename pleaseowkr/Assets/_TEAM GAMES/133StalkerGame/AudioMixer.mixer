@@ -1,5 +1,27 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-7777055134528040253
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: fa21b492eb3fedf4680257f4c629032e
+  m_EffectName: Pitch Shifter
+  m_MixLevel: 821397ad427414c4fa7c34a8081ce05a
+  m_Parameters:
+  - m_ParameterName: Pitch
+    m_GUID: 819c0ddc14a60f14a9925670559272db
+  - m_ParameterName: FFT size
+    m_GUID: 67bb409340d7eb7428daccf55fa785da
+  - m_ParameterName: Overlap
+    m_GUID: 9956f134ef788244099c149cc2d74198
+  - m_ParameterName: Max channels
+    m_GUID: 20ae33823c1d44b4cacc6e81b50ec8e5
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-4318127587934484408
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -58,10 +80,15 @@ AudioMixerController:
     name: _Pitch
   - guid: 9a82039690b26514f9a66471d8e11196
     name: Pitch_
+  - guid: 0804c2088de354941918143d7fb35663
+    name: _PitchK
+  - guid: fc546746e0e257d4b83a0a898a1ded13
+    name: VolumeK
   m_AudioMixerGroupViews:
   - guids:
     - 2965343df7ea10d4ab9817bca7d8df1b
     - 9509c710ca798094badb59346e0a31c7
+    - 4e9dbff0b6d2749459b9f749f9884a3b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -76,6 +103,7 @@ AudioMixerGroupController:
   m_GroupID: 2965343df7ea10d4ab9817bca7d8df1b
   m_Children:
   - {fileID: 8056540429651666335}
+  - {fileID: 3441513250718640755}
   m_Volume: 074d377383b47084a94763e8ed1eeb67
   m_Pitch: 4ac579cb1ee99fd40a83d9b08e09587f
   m_Send: 00000000000000000000000000000000
@@ -110,9 +138,44 @@ AudioMixerSnapshotController:
   m_SnapshotID: 9b3e98b5beccf5642a91c8d60b58902a
   m_FloatValues:
     c66ae954ff7b1fb4fafa9f6b52166f01: -38.3
+    fc546746e0e257d4b83a0a898a1ded13: -38.8078
     9a82039690b26514f9a66471d8e11196: 1
     e605979ba9c960641b347773fffb5b1a: 1
   m_TransitionOverrides: {}
+--- !u!243 &3441513250718640755
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Knock
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4e9dbff0b6d2749459b9f749f9884a3b
+  m_Children: []
+  m_Volume: fc546746e0e257d4b83a0a898a1ded13
+  m_Pitch: 0804c2088de354941918143d7fb35663
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 4198499926438697911}
+  - {fileID: -7777055134528040253}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &4198499926438697911
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6f136cff097c2114c93b49966c0dd593
+  m_EffectName: Attenuation
+  m_MixLevel: bafaf2f5d92c5954c9ef3ac1ba24dcc2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &8056540429651666335
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
